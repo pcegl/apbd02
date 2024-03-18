@@ -19,3 +19,16 @@ static double GetAverage(int[] numbers)
 int[] numbers = {1, 2, 3, 4};
 double average = GetAverage(numbers);
 Console.WriteLine(average);
+
+static int GetMaxValue(int[] numbers)
+{
+    int maxVal = numbers[0];
+    foreach (var number in numbers)
+    {
+        if (maxVal < number)
+        {
+            maxVal = number;
+        }
+    }
+    return maxVal;
+}
